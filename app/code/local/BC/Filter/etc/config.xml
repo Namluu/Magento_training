@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <BC_Filter>
+            <version>0.0.1</version>
+        </BC_Filter>
+    </modules>
+    <frontend>
+        <routers>
+            <test>
+                <use>standard</use>
+                <args>
+                    <module>BC_Filter</module>
+                    <frontName>bc-test</frontName>
+                </args>
+            </test>
+        </routers>
+    </frontend>
+    <global>
+        <models>
+            <bc_filter>
+                <class>BC_Filter_Model</class>
+            </bc_filter>
+            <catalog>
+                <rewrite>
+                    <layer_filter_attribute>BC_Filter_Model_Layer_Filter_Attribute</layer_filter_attribute>
+                    <layer_filter_item>BC_Filter_Model_Layer_Filter_Item</layer_filter_item>
+                </rewrite>
+            </catalog>
+            <catalog_resource>
+                <rewrite>
+                    <layer_filter_attribute>BC_Filter_Model_Resource_Layer_Filter_Attribute</layer_filter_attribute>
+                </rewrite>
+            </catalog_resource>
+        </models>
+    </global>
+</config>
