@@ -35,8 +35,12 @@ So I have to override these files of rwd theme
 
 - Need a method to get list attributes to filter
 app/design/frontend/rwd/default/template/bc/filter2/catalog/product/list.phtml
-```
+```html
 <li data-color="<?php echo $color ?>" data-id="<?php echo $_product->getId() ?>" data-price="<?php echo $_product->getPrice() ?>" data-material="<?php echo $_product->getMaterial() ?>"...
 ```
 
 - Filter doesn't work with pagination, ordering
+
+### Note
+We have to config to disable the configurable swatches product:
+System > Configuration > Catalog (left nav) > Configurable Swatches > General Settings > Enabled = No
