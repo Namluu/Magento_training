@@ -2,30 +2,30 @@
 
 ### Version 1
 
-** Features **
+**Features**
 - Multiple layered navigation filter extension
 - No core code changes
 - Works with any attribute filter
 
-** Technique **
+**Technique**
 - Magento extension
 - Override Model, Model Resource
 
 ### Version 2
 [Demo](http://10.87.1.77/mage_training/women/new-arrivals.html)
 
-** Features **
+**Features**
 - Multiple layered navigation filter extension
 - Filter very fast
 - Remember url by hash
 
-** Technique **
+**Technique**
 - Magento extension
 - Override Layout
 - Extend event
 - Override Block, Helper
 
-** Limitations **
+**Limitations**
 - Cannot override template set by Abstract Block
 app/design/frontend/rwd/default/template/catalog/layer/filter.phtml
 app/design/frontend/rwd/default/template/catalog/product/price.phtml
