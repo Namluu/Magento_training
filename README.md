@@ -29,7 +29,9 @@
 - Cannot override template set by Abstract Block
 app/design/frontend/rwd/default/template/catalog/layer/filter.phtml
 app/design/frontend/rwd/default/template/catalog/product/price.phtml
-`So I have to override these files of rwd theme`
+```
+So I have to override these files of rwd theme
+```
 
 - Need a method to get list attributes to filter
 app/design/frontend/rwd/default/template/bc/filter2/catalog/product/list.phtml
