@@ -16,8 +16,8 @@
 
 **Features**
 - Multiple layered navigation filter extension
-- Filter very fast
-- Remember url by hash
+- Filter works very fast, don't load collection again
+- Remember status filter by hash on URL
 
 **Technique**
 - Magento extension
@@ -38,3 +38,5 @@ app/design/frontend/rwd/default/template/bc/filter2/catalog/product/list.phtml
 ```
 <li data-color="<?php echo $color ?>" data-id="<?php echo $_product->getId() ?>" data-price="<?php echo $_product->getPrice() ?>" data-material="<?php echo $_product->getMaterial() ?>"...
 ```
+
+- Filter doesn't work with pagination, ordering
