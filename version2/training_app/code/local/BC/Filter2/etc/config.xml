@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <BC_Filter2>
+            <version>0.0.1</version>
+        </BC_Filter2>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <bc_filter2>
+                    <file>bc_filter2_layout.xml</file>
+                </bc_filter2>
+            </updates>
+        </layout>
+        <events>
+            <catalog_product_collection_load_after>
+                <observers>
+                    <bc_filter2>
+                        <class>bc_filter2/observer</class>
+                        <method>storeAttributes</method>
+                    </bc_filter2>
+                </observers>
+            </catalog_product_collection_load_after>
+        </events>
+    </frontend>
+    <global>
+        <blocks>
+            <bc_filter2>
+                <class>BC_Filter2_Block</class>
+            </bc_filter2>
+        </blocks>
+        <helpers>
+            <bc_filter2>
+                <class>BC_Filter2_Helper</class>
+            </bc_filter2>
+        </helpers>
+        <models>
+            <bc_filter2>
+                <class>BC_Filter2_Model</class>
+            </bc_filter2>
+        </models>
+    </global>
+</config>

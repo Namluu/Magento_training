@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<layout>
+    <catalog_category_layered>
+        <reference name="head">
+            <action method="addItem"><type>skin_css</type><name>css/bc_filter2.css</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/underscore.js</name></action>
+        </reference>
+        <reference name="before_body_end">
+            <!--load this script in footer to get ready DOM-->
+            <block type="core/template" name="bc_filter2_js" template="bc/filter2/bc_filter2_js.phtml"/>
+        </reference>
+        <reference name="product_list">
+            <action method="setTemplate"><template>bc/filter2/catalog/product/list.phtml</template></action>
+        </reference>
+        <reference name="catalog.leftnav">
+            <action method="setTemplate"><template>bc/filter2/catalog/layer/view.phtml</template></action>
+        </reference>
+    </catalog_category_layered>
+</layout>
